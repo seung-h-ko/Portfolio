@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .heroButton{
+        @apply px-6 py-2 border-b border-l border-[#d6a692] rounded-bl-3xl uppercase text-base
+        tracking-widest text-[#d6a692] transition-all hover:text-[#292522]/80 hover:border-[#292522]/80
+        hover:scale-110
+    }
+
+    .heroButtonRight{
+        @apply px-6 py-2 border-b border-r border-[#d6a692] rounded-br-3xl uppercase text-base
+        tracking-widest text-[#d6a692] transition-all hover:text-[#292522]/80 hover:border-[#292522]/80
+        hover:scale-110
+    }
+
+    .contactInput{
+        @apply outline-none bg-[#efd9b4] rounded-sm border px-6 py-4 border-[#292522]
+        text-[#292522]/70 placeholder-[#292522]/30 transition-all focus:border-[#292522]/40
+        focus:text-[#292522]
+    }
+}
