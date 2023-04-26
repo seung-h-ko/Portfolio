@@ -5,7 +5,7 @@ Portfolio made with Next.js + Tailwindcss + Typescript and Sanity for dynamic da
 ## Deployed on Vercel
 
 Link to My Portfolio 
-* [![Next][Next.js]][https://portfolio-modern-ksh4k1s.vercel.app/]
+[![Button Shield]][Shield]
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
