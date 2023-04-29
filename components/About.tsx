@@ -14,7 +14,7 @@ export default function About({ pageInfo }: Props) {
             className='relative flex flex-col h-screen max-w-7xl px-10 justify-evenly mx-auto items-center pt-10 pb-48'
         >
             <h3 className='uppercase tracking-[20px] text-[#6b7c7e] text-2xl'>
-                About
+                <span className='text-[#292522]'>About</span> Me
             </h3>
             <motion.div
                 initial={{

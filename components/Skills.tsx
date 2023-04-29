@@ -14,7 +14,7 @@ export default function Skills({ skills }: Props) {
         <div
             className='h-screen flex flex-col text-center items-center pt-20 pb-48 px-5'>
             <h3 className='uppercase tracking-[20px] text-[#6b7c7e] text-2xl h-1/6'>
-                Skills
+                My <span className='text-[#292522]'>Skills</span>
             </h3>
 
             {/* <div className='grid grid-cols-5 gap-5'> */}

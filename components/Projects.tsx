@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
 import { Project } from '../typings';
 import { urlFor } from '../sanity';
@@ -31,7 +32,7 @@ export default function Projects({ projects }: Props) {
             className='relative h-screen flex overflow-hidden flex-col items-center pt-20 pb-48'
         >
             <h3 className='uppercase tracking-[20px] text-[#6b7c7e] text-2xl'>
-                Projects
+                My <span className='text-[#292522]'>Projects</span>
             </h3>
 
             <div className='w-full flex overflow-x-scroll overflow-y-hidden snap-x
@@ -73,16 +74,20 @@ export default function Projects({ projects }: Props) {
                                     />
                                 ))}
                             </div>
-                            <Link
-                                href={project?.linkToBuild}
-                                className="flex flex-row items-center space-x-3 justify-center text-[#292522] font-bold"
-                            >
-                                <LinkIcon
-                                    height={20}
-                                    width={20}
+                            <div className='flex justify-center'>
+                                <SocialIcon
+                                    url={project?.linkToBuild}
+                                    fgColor={'#292522'}
+                                    bgColor='transparent'
+                                    className='hover:scale-125 transition-transform'
                                 />
-                                <p className='underline'>Project Link</p>
-                            </Link>
+                                <Link
+                                    href={project?.linkToBuild}
+                                    className="flex flex-row items-center space-x-3 justify-center text-[#292522] font-bold"
+                                >
+                                    <p className='underline'>Project Link</p>
+                                </Link>
+                            </div>
                             <p className='text-lg text-center md:text-left max-w-[800px]'>
                                 {project?.summary}
                             </p>

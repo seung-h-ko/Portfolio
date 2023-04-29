@@ -53,8 +53,8 @@ export default function Skill({ skill, i }: Props) {
             >
                 <img
                     src={urlFor(skill?.image).url()}
-                    className='rounded-2xl border border-[#292522]/0 w-[70px] h-[70px] md:w-[110px] md:h-[110px] m-1 md:m-4 object-contain
-                 filter group-hover:scale-110 group-hover:border-[#292522] transition-all z-10 pointer-events-none'
+                    className='rounded-2xl w-[70px] h-[70px] md:w-[110px] md:h-[110px] m-1 md:m-4 object-contain
+                 filter group-hover:scale-110 group-hover:shadow-md transition-all z-10 pointer-events-none'
                 />
                 <div className='absolute group-hover:opacity-100 group-hover:-translate-y-4 group-hover:rotate-0 scale-50
                     opacity-0 translate-y-0 -rotate-45 transition-all duration-500 text-[#292522] z-0 group-hover:scale-150'>
